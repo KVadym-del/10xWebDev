@@ -10,7 +10,6 @@ import (
 )
 
 func main() {
-	// Server configuration
 	config := &server.Config{
 		Port:         "8088",
 		ReadTimeout:  5 * time.Second,
@@ -18,7 +17,6 @@ func main() {
 		IdleTimeout:  15 * time.Second,
 	}
 
-	// Create and start server
 	server := server.NewServer(config)
 	if err := server.Start(); err != nil {
 		if !errors.Is(err, http.ErrServerClosed) {

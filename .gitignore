@@ -1,6 +1,9 @@
 *.exe
-.vscode
-node_modules
 *.js
-!webpack.config.js
+
+.vscode
+
+node_modules
 package-lock.json
+
+!webpack.config.js

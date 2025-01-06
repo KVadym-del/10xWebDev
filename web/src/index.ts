@@ -4,7 +4,6 @@ async function main() {
     try {
         await wasmModule.initialize();
 
-        // Add event listeners
         const fibForm = document.getElementById('fib-form') as HTMLFormElement;
         const calcForm = document.getElementById('calc-form') as HTMLFormElement;
 
